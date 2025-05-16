@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 20px;
+    box-shadow: 0 0 10px #eee;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #f75c86;
+    font-weight: 600;
+  }
+  
+  .option-box {
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .option-box.popular {
+    border: 2px solid #f75c86;
+    background-color: #fff6f8;
+  }
+  
+  .option-box input[type="radio"] {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+  }
+  
+  .option-box .content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+  }
+  
+  .option-box .unit {
+    font-weight: 600;
+  }
+  
+  .option-box .desc {
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .option-box .price {
+    font-weight: bold;
+  }
+  
+  .option-box .strike {
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .badge {
+    background: #f75c86;
+    color: white;
+    font-size: 11px;
+    padding: 2px 6px;
+    margin-left: 5px;
+    border-radius: 3px;
+  }
+  
+  .ribbon {
+    position: absolute;
+    top: -10px;
+    right: -2px;
+    background: #f75c86;
+    color: white;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 0 0 0 5px;
+  }
+  
+  .expandable {
+    padding: 10px 25px 0 25px;
+    display: none;
+  }
+  
+  .expandable.active {
+    display: block;
+  }
+  
+  .dropdown-header {
+    display: flex;
+    justify-content: left;
+    padding: 2px 55px;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+    gap: 18px;
+  }
+  
+  .dropdown-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+  }
+  
+  .dropdown-row select {
+    padding: 5px;
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .free {
+    color: #f75c86;
+  }
+  
+  .total {
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    width: 100%;
+    margin-top: 15px;
+    background: #f75c86;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .powered {
+    font-size: 10px;
+    text-align: center;
+    color: #aaa;
+    margin-top: 10px;
+  }
+  .option-box:hover {
+  background-color: #fff1f5; 
+  border-color: #f75c86;
+}
+ 

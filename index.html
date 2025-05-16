@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend_Project</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <div class="container">
+    <h2> YAY! It’s BOGO</h2>
+
+    <form id="pricingForm">
+      <!-- Option 1 -->
+      <label class="option-box">
+        <input type="radio" name="unit" value="1" data-price="10" checked />
+        <div class="content">
+          <div class="left">
+            <div class="unit">1 Unit <span class="badge">10% Off</span></div>
+            <div class="desc">Standard pricing</div>
+          </div>
+          <div class="right">
+            <div class="price">$10.00</div>
+            <div class="strike">$24.00</div>
+          </div>
+        </div>
+        <div class="expandable">
+          <div class="dropdown-header"><span>Size</span><span>Color</span></div>
+          <div class="dropdown-row">
+            <span>#1</span>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Red</option></select>
+          </div>
+          <div class="dropdown-row">
+            <span>#2</span>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Red</option></select>
+          </div>
+        </div>
+      </label>
+
+      <!-- Option 2 -->
+      <label class="option-box popular">
+        <input type="radio" name="unit" value="2" data-price="18" />
+        <div class="ribbon">Most Popular</div>
+        <div class="content">
+          <div class="left">
+            <div class="unit">2 Units <span class="badge">20% Off</span></div>
+          </div>
+          <div class="right">
+            <div class="price">$18.00</div>
+            <div class="strike">$30.00</div>
+          </div>
+        </div>
+        <div class="expandable">
+          <div class="dropdown-header"><span>Size</span><span>Color</span></div>
+          <div class="dropdown-row">
+            <span>#1</span>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Red</option></select>
+          </div>
+          <div class="dropdown-row">
+            <span>#2</span>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Red</option></select>
+          </div>
+        </div>
+      </label>
+
+      <!-- Option 3 -->
+      <label class="option-box">
+        <input type="radio" name="unit" value="3" data-price="24" />
+        <div class="content">
+          <div class="left">
+            <div class="unit">3 Units <span class="badge">30% Off</span></div>
+          </div>
+          <div class="right">
+            <div class="price">$24.00</div>
+            <div class="strike">$36.00</div>
+          </div>
+        </div>
+        <div class="expandable">
+          <div class="dropdown-header"><span>Size</span><span>Color</span></div>
+          <div class="dropdown-row">
+            <span>#1</span>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Red</option></select>
+          </div>
+          <div class="dropdown-row">
+            <span>#2</span>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Red</option></select>
+          </div>
+        </div>
+      </label>
+
+      <!-- Summary -->
+      <div class="summary">
+        <span class="free">Free Shipping</span>
+        <span class="total">Total: $<span id="total">10.00</span></span>
+      </div>
+
+      <button type="button" class="add-to-cart">Add to Cart</button>
+      <div class="powered">Powered by Pumper</div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
